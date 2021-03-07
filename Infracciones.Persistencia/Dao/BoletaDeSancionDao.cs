@@ -1,6 +1,8 @@
-﻿using Infracciones.Persistencia.Entity;
+﻿using Dapper;
+using Infracciones.Persistencia.Entity;
+using MySql.Data.MySqlClient;
 using System;
-using System.Data.SqlClient;
+using System.Linq;
 
 namespace Infracciones.Persistencia.Dao
 {
@@ -13,12 +15,35 @@ namespace Infracciones.Persistencia.Dao
                 string query;
 
                 query = "";
-                using(var db = new SqlConnection())
+                using (var db = new MySqlConnection(Conexion.CadenaDeConexion))
                 {
-                    entity.Id = db.Query<int>(query);
+                    entity.Id = db.Query<int>(query).FirstOrDefault();
                 }
 
-                return entity.Id
+                return entity.Id;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static BoletaDeSancionEntity Get(string placa)
+        {
+            try
+            {
+                string query;
+                BoletaDeSancionEntity entity;
+
+                query = "";
+
+                using (var db = new MySqlConnection(Conexion.CadenaDeConexion))
+                {
+                    entity = db.Query<BoletaDeSancionEntity>(query).FirstOrDefault();
+                }
+
+                return entity;
             }
             catch (Exception)
             {
