@@ -1,4 +1,5 @@
-﻿using Infracciones.Dto;
+﻿using Infracciones.BusinessLayer;
+using Infracciones.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,13 +18,13 @@ namespace Infracciones.Api.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    return BadRequest(ModelState);
+                    item.Id = BoletaDeSancionBl.Add(item);
+                    return Created("", new { Id = item.Id });
                 }
                 else
                 {
-                    return Created("", new { Id = 0 });
+                    return BadRequest(ModelState);
                 }
-
             }
             catch (Exception ex)
             {

@@ -1,0 +1,71 @@
+﻿@model Infracciones.Dto.Articulo
+
+@{
+    ViewBag.Title = "Detalles del artículo";
+}
+
+<div class="container">
+<h2>Detalles</h2>
+
+<div>
+    <h4>Articulo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioIdAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioIdAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioIdBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioIdBaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeBaja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@Html.Partial("Fraccion/_ListaDeFracciones", (List<Infracciones.Dto.Fraccion>)ViewBag.ListaDeFracciones)
+
+</div>

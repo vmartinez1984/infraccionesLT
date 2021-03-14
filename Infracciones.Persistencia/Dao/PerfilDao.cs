@@ -7,17 +7,17 @@ using System.Linq;
 
 namespace Infracciones.Persistencia.Dao
 {
-public    class PerfilDao
+    public class PerfilDao
     {
-        public List<PerfilEntity> GetAll()
+        public static List<PerfilEntity> GetAll()
         {
             try
             {
                 List<PerfilEntity> entities;
                 string query;
 
-                query = "";
-                using (var db = new MySqlConnection())
+                query = $@"SELECT * FROM perfil;";
+                using (var db = new MySqlConnection(Conexion.CadenaDeConexion))
                 {
                     entities = db.Query<PerfilEntity>(query).ToList();
                 }

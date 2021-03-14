@@ -90,16 +90,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao\ArticuloDao.cs" />
     <Compile Include="Dao\BoletaDeSancionDao.cs" />
     <Compile Include="Dao\Conexion.cs" />
     <Compile Include="Dao\EstatusDeLaBoletaDeSancionDao.cs" />
+    <Compile Include="Dao\FraccionDao.cs" />
     <Compile Include="Dao\ImagenDao.cs" />
     <Compile Include="Dao\PerfilDao.cs" />
     <Compile Include="Dao\ReglamentoDao.cs" />
     <Compile Include="Dao\TipoDeImagenDao.cs" />
     <Compile Include="Dao\UsuarioDao.cs" />
+    <Compile Include="Entity\ArticuloEntity.cs" />
     <Compile Include="Entity\BoletaDeSancionEntity.cs" />
     <Compile Include="Entity\EstatusDeLaBoletaDeSancionEntity.cs" />
+    <Compile Include="Entity\FraccionEntity.cs" />
     <Compile Include="Entity\ImagenEntity.cs" />
     <Compile Include="Entity\PagoDeBoletaDeSancionEntity.cs" />
     <Compile Include="Entity\PerfilEntity.cs" />

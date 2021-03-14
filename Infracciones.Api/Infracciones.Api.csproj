@@ -255,6 +255,10 @@
       <Project>{3949f15e-54b6-4f9f-9178-5faed829e1e4}</Project>
       <Name>Infracciones.Dto</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infracciones\Infracciones.BusinessLayer.csproj">
+      <Project>{55bd4554-b688-4496-81d2-a2be376dcd29}</Project>
+      <Name>Infracciones.BusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

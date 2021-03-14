@@ -8,6 +8,6 @@ namespace Infracciones.Persistencia.Dao
 {
     public class Conexion
     {
-        public static string CadenaDeConexion { get { return "Server=127.0.0.1;Database=dispositivos;Uid=root;Pwd=;"; } }
+        public static string CadenaDeConexion { get { return "Server=127.0.0.1;Database=infracciones;Uid=root;Pwd=;"; } }
     }
 }

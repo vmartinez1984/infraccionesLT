@@ -1,0 +1,133 @@
+﻿@model Infracciones.Dto.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+ <div class="container">
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PerfilId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PerfilId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PerfilNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PerfilNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioIdAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioIdAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioIdBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioIdBaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Materno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Materno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreDeUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreDeUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contrasenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contrasenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContraseniaConfirmacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContraseniaConfirmacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeBaja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Regresar a la lista", "Index")
+</p>
+
+ </div>

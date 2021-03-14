@@ -1,0 +1,106 @@
+﻿@model Infracciones.Dto.Reglamento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reglamento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Multa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Multa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioIdAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioIdAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioIdBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioIdBaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDeposito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDeposito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Isactivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Isactivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Articulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Articulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fraccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fraccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeBaja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

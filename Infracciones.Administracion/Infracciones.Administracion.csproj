@@ -119,7 +119,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArticuloController.cs" />
+    <Compile Include="Controllers\FraccionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReglamentoController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -6352,6 +6356,7 @@
     <Content Include="bower_components\select2\tests\vendor\jquery-3.4.1.js" />
     <Content Include="bower_components\select2\tests\vendor\qunit-1.23.1.css" />
     <Content Include="bower_components\select2\tests\vendor\qunit-1.23.1.js" />
+    <Content Include="Content\sb-admin-2.css" />
     <Content Include="dist\css\AdminLTE.css" />
     <Content Include="dist\css\AdminLTE.min.css" />
     <Content Include="dist\css\alt\AdminLTE-bootstrap-social.css" />
@@ -6901,6 +6906,7 @@
     <Content Include="bower_components\select2\src\scss\_single.scss" />
     <Content Include="dist\css\adminlte.css.map" />
     <Content Include="dist\css\adminlte.min.css.map" />
+    <Content Include="Img\LoginCandado.jpg" />
     <Content Include="plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="plugins\input-mask\phone-codes\phone-codes.json" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
@@ -7073,7 +7079,28 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\LoginDos.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Usuario\Agregar.cshtml" />
+    <Content Include="Views\Usuario\IniciarSesion.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Reglamento\Index.cshtml" />
+    <Content Include="Views\Reglamento\Details.cshtml" />
+    <Content Include="Views\Reglamento\Create.cshtml" />
+    <Content Include="Views\Reglamento\Edit.cshtml" />
+    <Content Include="Views\Reglamento\Delete.cshtml" />
+    <Content Include="Views\Articulo\Index.cshtml" />
+    <Content Include="Views\Articulo\Details.cshtml" />
+    <Content Include="Views\Articulo\Create.cshtml" />
+    <Content Include="Views\Articulo\Edit.cshtml" />
+    <Content Include="Views\Articulo\Delete.cshtml" />
+    <Content Include="Views\Shared\Fraccion\_ListaDeFracciones.cshtml" />
+    <Content Include="Views\Fraccion\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -7089,6 +7116,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infracciones.Dto\Infracciones.Dto.csproj">
+      <Project>{3949F15E-54B6-4F9F-9178-5FAED829E1E4}</Project>
+      <Name>Infracciones.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infracciones\Infracciones.BusinessLayer.csproj">
+      <Project>{55BD4554-B688-4496-81D2-A2BE376DCD29}</Project>
+      <Name>Infracciones.BusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
